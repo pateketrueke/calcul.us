@@ -3,11 +3,6 @@
   "name": "Calcul.us",
   "description": "Learn math... or don't",
   "launch_path": "/generated/index.html",
-  "icons": {
-    "16": "/img/icons/mortar-16.png",
-    "48": "/img/icons/mortar-48.png",
-    "128": "/img/icons/mortar-128.png"
-  },
   "developer": {
     "name": "Alvaro Cabrera",
     "url": "https://github.com/pateketrueke"
