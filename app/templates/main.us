@@ -1,0 +1,13 @@
+<div id="canvas">
+  <button id="plus" class="operator">&plus;</button>
+  <button id="minus" class="operator">&minus;</button>
+  <button id="divide" class="operator">&divide;</button>
+  <button id="times" class="operator">&times;</button>
+
+  <div id="output">
+    <ul id="math"></ul>
+    <div id="result"></div>
+    <div id="stats"></div>
+    <div id="face"></div>
+  </div>
+</div>
