@@ -9,6 +9,22 @@
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend('application', {
   //Override application configuration here. Common examples follow in the comments.
 
+  loadNpmTasks: [
+    "grunt-contrib-copy"
+  ],
+
+  appendTasks: {
+    dist: ["copy"]
+  },
+
+  copy: {
+    app: {
+      files: [
+        {expand: true, flatten: true, src: "app/manifest.webapp", dest: "dist/", filter: "isFile"}
+      ]
+    }
+  }
+
   // API Proxying
   //
   // During development, you'll likely want to make XHR (AJAX) requests to an API on the same
