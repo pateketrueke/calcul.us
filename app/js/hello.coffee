@@ -1,3 +1,8 @@
+vibrate = (secs=1) ->
+  if 'vibrate' in navigator
+    navigator.vibrate secs * 1000
+
+
 shuffle = (o) ->
   j = undefined
   x = undefined
@@ -35,7 +40,6 @@ main = ->
 
   body = document.body
   list = document.getElementById 'math'
-  face = document.getElementById 'face'
   stats = document.getElementById 'stats'
   result = document.getElementById 'result'
   buttons = document.getElementsByTagName 'button'
@@ -55,7 +59,6 @@ main = ->
     list.innerHTML += '<li>' + left_value + '</li>'
     list.innerHTML += '<li>' + right_value + '</li>'
 
-    face.innerHTML = ''
     result.innerHTML = result_value
     stats.innerHTML = "<span>✓ #{ok}</span> <span>✗ #{bad}</span>"
 
@@ -68,11 +71,13 @@ main = ->
     if solved
       ok += 1
       klass = 'right'
-      face.innerHTML = '☺'
+      result.innerHTML = '☺'
     else
+      vibrate()
+
       bad += 1
       klass = 'badly'
-      face.innerHTML = '☹'
+      result.innerHTML = '☹'
 
     body.classList.add klass
 
