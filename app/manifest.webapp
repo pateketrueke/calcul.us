@@ -2,12 +2,17 @@
   "version": "0.1",
   "name": "Calcul.us",
   "description": "Learn math... or don't",
-  "launch_path": "/generated/index.html",
+  "launch_path": "/index.html",
   "developer": {
     "name": "Alvaro Cabrera",
     "url": "https://github.com/pateketrueke"
   },
   "installs_allowed_from": ["*"],
   "default_locale": "en",
-  "permissions": {}
+  "permissions": {},
+  "icons": {
+    "16": "/img/app-16.png",
+    "48": "/img/app-48.png",
+    "128": "/img/app-128.png"
+  }
 }

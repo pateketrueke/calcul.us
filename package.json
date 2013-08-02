@@ -1,8 +1,7 @@
 {
-  "name": "ffxos",
-  "title": "An HTML/JS/CSS app",
-  "version": "0.0.1",
-  "private": true,
+  "name": "Calcul.us",
+  "description": "Learn math... or don't",
+  "version": "0.1",
   "author": {
     "name": "John Doe",
     "company": "ACME, Inc."
